@@ -1,6 +1,6 @@
 <?php
 
-$arr = array("envio"=>"Chris","mensaje"=>"bienvenido");
+$arr = array("envio"=>"Miguel","mensaje"=>"bienvenido");
 echo json_encode($arr);
 
 ?>
