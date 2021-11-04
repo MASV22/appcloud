@@ -20,7 +20,7 @@ $b=$GET['represa'];
 // $resultado=$tb->insertOne($registro);
 // echo $resultado ->getInsertedCount();
 
-$tb=$client->water->precipitacion;
+$tb=$client->precipitacion->precipitaciones;
 $filter= ['$and'=>
             [
                 ['ANNO'=>['$eq'=>'2018']],
