@@ -3,7 +3,7 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 $client = new MongoDB\Client(
-    'mongodb+srv://miguel:admin123456@cluster0.amgor.mongodb.net/MultimediaS?retryWrites=true&w=majority');
+    'mongodb+srv://miguel:admin123456@cluster0.amgor.mongodb.net/precipitacion?retryWrites=true&w=majority');
 
 // $tb=$client->MultimediaS->puntaje;
 // $registro=array(
@@ -18,8 +18,8 @@ $client = new MongoDB\Client(
 $tb=$client->water->Precipitaciones;
 $filter= ['$and'=>
             [
-                ['ANNO'=>['$eq'=>'1997']],
-                ['ESTACION'=>['$eq'=>'Sutatausa']]
+                ['ANNO'=>['$eq'=>'2018']],
+                ['ESTACION'=>['$eq'=>'Zipaquirá']]
             ]
         ];
  
