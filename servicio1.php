@@ -23,12 +23,12 @@ $b=$GET['represa'];
 $tb=$client->precipitacion->precipitaciones;
 $filter= ['$and'=>
             [
-                ['ANNO'=>['$eq'=>'2018']],
-                ['ESTACION'=>['$eq'=>'Tisquesusa']]
+                ['ANNO'=>['$eq'=>$a]],
+                ['ESTACION'=>['$eq'=>$b]]
             ]
         ];
  
-// $query = new MongoDB\Driver\Query($filter);
+$query = new MongoDB\Driver\Query($filter);
  
 $rows = $tb->find($filter);
 $datos= iterator_to_array($rows);
