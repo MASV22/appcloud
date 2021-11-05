@@ -8,6 +8,7 @@ $client = new MongoDB\Client(
 //variables de entrada
 $a=$GET['anno'];
 $b=$GET['represa'];
+$tb=$client->precipitacion->precipitaciones;
 
 
 // $tb=$client->MultimediaS->puntaje;
@@ -20,11 +21,11 @@ $b=$GET['represa'];
 // $resultado=$tb->insertOne($registro);
 // echo $resultado ->getInsertedCount();
 
-$tb=$client->precipitacion->precipitaciones;
+
 $filter= ['$and'=>
             [
-                ['ANNO'=>['$eq'=>$a]],
-                ['ESTACION'=>['$eq'=>$b]]
+                ['ANNO'=>['$eq'=>'1995']],
+                ['ESTACION'=>['$eq'=>'Pajas Blancas']]
             ]
         ];
  
