@@ -3,7 +3,7 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 $client = new MongoDB\Client(
-    'mongodb+srv://miguel:admin123456@cluster0.amgor.mongodb.net/precipitacion?retryWrites=true&w=majority');
+    'mongodb+srv://miguel:admin12345@cluster0.amgor.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 
 //variables de entrada
 $a=$GET['anno'];
